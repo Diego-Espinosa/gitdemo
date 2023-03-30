@@ -11,9 +11,19 @@ package model;
 public class Person {
     private int id;
     private String name;
-    public Person(int id, String name) {
+    private Stirng lastName;
+    public Person(int id, String name, String lastName) {
         this.id = id;
         this.name = name;
+        this.lastName = lastName;
+    }
+
+    public void setLastName(Stirng lastName) {
+        this.lastName = lastName;
+    }
+
+    public Stirng getLastName() {
+        return lastName;
     }
 
     public int getId() {
